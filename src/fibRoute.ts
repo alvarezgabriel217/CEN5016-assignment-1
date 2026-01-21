@@ -12,10 +12,10 @@ export default (req: Request, res: Response) => {
   }
   
   const fibN = fibonacci(n);
-  let result = `fibonacci(${num}) is ${fibN}`;
+  let result = `fibonacci(${n}) is ${fibN}`;
 
   if (fibN < 0) {
-    result = `fibonacci(${num}) is undefined`;
+    result = `fibonacci(${n}) is undefined`;
   }
 
   res.send(result);
